@@ -1,0 +1,35 @@
+.image-selector {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 1000;
+  background-color: white;
+  padding: 16px;
+  border: 1px solid #ccc;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  max-width: 80vw; /* Set a max-width based on the viewport width */
+  overflow: auto; /* Scrollbars will appear if the content overflows the container */
+  max-height: 80vh;
+  display: grid;
+  grid-template-columns: repeat(5, 80px); /* This will create 5 columns each 80px wide */
+  gap: 10px; /* A bit of space between images */
+}
+
+.image-item { /* Updated selector to .image-item based on your React code */
+  cursor: pointer;
+}
+
+.image-item img {
+  width: 80px;  /* Width of the image preview */
+  height: 80px; /* Height of the image preview */
+  object-fit: cover; /* The image will cover the area without stretching, parts of the image that don't fit in the preview area will be cut off */
+  border-radius: 5px; /* Optional: add a slight rounded corner */
+}
+
+
+
+
+
+
+  
